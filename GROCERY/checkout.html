@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroceryMart - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">GroceryMart</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">(0)</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <h1>Delivery Details</h1>
+        <form id="delivery-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="district">District:</label>
+                <input type="text" id="district" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" id="state" required>
+            </div>
+            <div class="form-group">
+                <label for="pincode">Pincode:</label>
+                <input type="text" id="pincode" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="alt-phone">Alternate Phone Number:</label>
+                <input type="tel" id="alt-phone">
+            </div>
+            <h2>Select Payment Method</h2>
+            <div class="form-group">
+                <label for="payment-method">Payment Method:</label>
+                <div>
+                    <input type="radio" id="cod" name="payment-method" value="COD" required>
+                    <label for="cod">Cash on Delivery</label>
+                </div>
+                <div>
+                    <input type="radio" id="gpay" name="payment-method" value="GPay">
+                    <label for="gpay">GPay</label>
+                </div>
+                <div>
+                    <input type="radio" id="phonepe" name="payment-method" value="PhonePe">
+                    <label for="phonepe">PhonePe</label>
+                </div>
+                <div>
+                    <input type="radio" id="credit-card" name="payment-method" value="Credit Card">
+                    <label for="credit-card">Credit Card</label>
+                </div>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GroceryMart. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

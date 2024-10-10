@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroceryMart - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">GroceryMart</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">(0)</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to GroceryMart</h1>
+            <p>Your one-stop shop for all your grocery needs!</p>
+            <a href="#categories" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <a href="category.html?category=household" class="category-card">
+                <img src="download (45).jpeg" alt="Household Essentials">
+                <h3>Household Essentials</h3>
+            </a>
+            <a href="category.html?category=pantry" class="category-card">
+                <img src="images (8).jpeg" alt="Pantry Essentials">
+                <h3>Pantry Essentials</h3>
+            </a>
+            <a href="category.html?category=freshproduce" class="category-card">
+                <img src="download (46).jpeg" alt="Fresh Produce">
+                <h3>Fresh Produce</h3>
+            </a>
+            <a href="category.html?category=snacks" class="category-card">
+                <img src="download (47).jpeg" alt="Snacks & Beverages">
+                <h3>Snacks & Beverages</h3>
+            </a>
+            <a href="category.html?category=bakery" class="category-card">
+                <img src="download (48).jpeg" alt="Bakery & Dairy">
+                <h3>Bakery & Dairy</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid" id="featured-products">
+            <!-- Featured products will be dynamically loaded -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GroceryMart. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
